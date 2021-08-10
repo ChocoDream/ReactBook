@@ -6,8 +6,10 @@ export default {
     src: "/dist",
   },
   alias: {
-    components: "./src/components",
+    components: "./src/Components",
+    containers: "./src/Containers",
     "@app": "./src",
+    "@public": "./public",
   },
   plugins: ["@snowpack/plugin-react-refresh", "@snowpack/plugin-sass"],
   routes: [
