@@ -1,4 +1,4 @@
-# New Project
+# ReactBook Client
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
