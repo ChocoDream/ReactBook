@@ -7,7 +7,7 @@ Install Python, flask, flask Cors. Make sure Python is run using virtual envirom
 ### flask run
 start backend
 
-##
+## Client
 
 ### npm run start
 Runs Website in DEV mode
