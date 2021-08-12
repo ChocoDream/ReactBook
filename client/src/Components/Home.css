@@ -7,12 +7,15 @@
 }
 
 .home-logo {
-  height: 40vmin;
+  height: 20vmin;
+  background-color: blue;
+  width: 20vmin;
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .home-logo {
-    animation: spinner infinite 10s linear;
+    animation: spinner infinite 2s linear;
   }
 }
 
