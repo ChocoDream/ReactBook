@@ -16,6 +16,11 @@ def index():
 def hello(name):
   print(f"Client wrote: {escape(name)}")
   return f"Hello, {escape(name)}!"
+
+@app.route("/firebase-post", methods = ["POST"])
+def postToDatabase():
+  return request.json
+
 @app.route("/firebase-get")
 def getFromDatabase():
   return FireData.getAll()
