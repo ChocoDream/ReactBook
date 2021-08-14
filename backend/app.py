@@ -22,15 +22,7 @@ def getFromDatabase():
 def getFromDatabaseFromRoute(route):
   return FireData.get(escape(route))
 
-<<<<<<< Updated upstream
 @app.route("/api/firebase", methods = ["POST"])
 def postToDatabase():
   data = request.json
   return FireData.post(data)
-=======
-@app.route("/<name>")
-def hello(name):
-  print(f"Client wrote: {escape(name)}")
-  return f"Hello, {escape(name)}!"
-
->>>>>>> Stashed changes

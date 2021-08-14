@@ -5,7 +5,6 @@ import Home from "containers/Home/Home";
 import Nav from "containers/Nav/Nav";
 import About from "containers/About/About";
 import NotFound from "containers/NotFound/NotFound";
-import APItester from "containers/APItester/APItester";
 
 const App = () => {
   return (
