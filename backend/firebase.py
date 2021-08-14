@@ -8,7 +8,7 @@ load_dotenv()
 class SingletonMeta(type): #SINGLETON Class Meta
   _instances = {}
 
-  def __call(cls, *args, **kwargs):
+  def __call__(cls, *args, **kwargs):
     if cls not in cls._instances:
       instance = super().__call__(*args, **kwargs)
       cls._instances[cls] = instance
@@ -35,8 +35,6 @@ class Firebase(metaclass = SingletonMeta):
   def get(self, route = "/"):
     ref = db.reference(route)
     return ref.get()
-    #ref = db.reference(route)
-    #print(ref.get())
   
   @classmethod
   def post(self, data, route = "/"):
