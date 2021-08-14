@@ -16,11 +16,6 @@ const Nav = () => {
             About
           </Link>
         </li>
-        <li className="nav-link-item">
-          <Link to="/apitests" className="nav-link-item-context">
-            Test Backend Calls
-          </Link>
-        </li>
       </ul>
     </div>
   );

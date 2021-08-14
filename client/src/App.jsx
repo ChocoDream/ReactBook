@@ -19,9 +19,6 @@ const App = () => {
           <Route exact path="/about">
             <About />
           </Route>
-          <Route exact path="/apitests">
-            <APItester />
-          </Route>
           <Route path="*">
             <NotFound />
           </Route>
