@@ -31,9 +31,15 @@ class Firebase(metaclass = SingletonMeta):
     cred = credentials.Certificate(ADMIN_SDK_KEY)
     firebase_admin.initialize_app(cred, {'databaseURL': os.environ.get("DATABASEURL")})
 
-  
-  def getAll(_, route = "/"):
+  @classmethod
+  def get(self, route = "/"):
     ref = db.reference(route)
     return ref.get()
     #ref = db.reference(route)
     #print(ref.get())
+  
+  @classmethod
+  def post(self, data, route = "/"):
+    ref = db.reference(route)
+    ref.push().set(data)
+    return "Submitted"

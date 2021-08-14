@@ -9,22 +9,20 @@ CORS(app)
 FireData = firebase.Firebase()
 
 @app.route("/")
-def index():
-  return "Index Page"
+def serve():
+  return "index page"
 
-@app.route("/<name>")
-def hello(name):
-  print(f"Client wrote: {escape(name)}")
-  return f"Hello, {escape(name)}!"
 
-@app.route("/firebase-post", methods = ["POST"])
-def postToDatabase():
-  return request.json
 
-@app.route("/firebase-get")
+@app.route("/api/firebase")
 def getFromDatabase():
-  return FireData.getAll()
+  return FireData.get()
 
-@app.route("/firebase-get/<route>")
+@app.route("/api/firebase/<route>")
 def getFromDatabaseFromRoute(route):
-  return FireData.getAll(escape(route))
+  return FireData.get(escape(route))
+
+@app.route("/api/firebase", methods = ["POST"])
+def postToDatabase():
+  data = request.json
+  return FireData.post(data)
