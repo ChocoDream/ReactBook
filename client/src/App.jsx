@@ -5,6 +5,8 @@ import Home from "containers/Home/Home";
 import Nav from "containers/Nav/Nav";
 import About from "containers/About/About";
 import NotFound from "containers/NotFound/NotFound";
+import Credit from "containers/Credit/Credit";
+
 
 const App = () => {
   return (
@@ -17,6 +19,10 @@ const App = () => {
           </Route>
           <Route exact path="/about">
             <About />
+          </Route>
+          <Route exact path="/credit">
+            <Credit /> 
+
           </Route>
           <Route path="*">
             <NotFound />
