@@ -15,6 +15,12 @@ const Nav = () => {
           <Link to="/about" className="nav-link-item-context">
             About
           </Link>
+      
+        </li>
+        <li> 
+          <Link to="/credit" className="nav-link-item-context">
+          Credit
+          </Link>
         </li>
       </ul>
     </div>
