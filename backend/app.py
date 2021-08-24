@@ -14,15 +14,15 @@ def serve():
 
 
 
-@app.route("/api/firebase")
+@app.route("/api/firebase/")
 def getFromDatabase():
   return FireData.get()
 
-@app.route("/api/firebase/<route>")
+@app.route("/api/firebase/<route>/")
 def getFromDatabaseFromRoute(route):
   return FireData.get(escape(route))
 
-@app.route("/api/firebase", methods = ["POST"])
+@app.route("/api/firebase/", methods = ["POST"])
 def postToDatabase():
   data = request.json
   return FireData.post(data)
