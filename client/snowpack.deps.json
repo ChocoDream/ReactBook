@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "react-feather": "^2.0.9"
+  },
+  "lock": {
+    "react-feather#^2.0.9": "react-feather@v2.0.9-oMRGi18KDVbb6VIqFrKy"
+  }
+}

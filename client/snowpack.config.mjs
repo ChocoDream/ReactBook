@@ -24,7 +24,7 @@ export default {
     // "bundle": true,
   },
   packageOptions: {
-    /* ... */
+    source: "remote",
   },
   devOptions: {
     /* ... */
