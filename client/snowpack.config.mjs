@@ -24,7 +24,7 @@ export default {
     // "bundle": true,
   },
   packageOptions: {
-    source: "remote",
+    //source: "remote", ACTIVATES REMOTE NPM DEVELOPMENT, Stops autorefresh on change... sadly until found fix
   },
   devOptions: {
     /* ... */
