@@ -10,7 +10,7 @@ import Credit from "containers/Credit/Credit";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="app">
       <Router>
         <Nav />
         <Switch>

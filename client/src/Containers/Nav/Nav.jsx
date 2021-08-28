@@ -1,28 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Settings } from "react-feather";
+
+import avatarImg from "@public/avatar.png";
+
+import "./styles.scss";
 
 const Nav = () => {
   return (
     <div className="nav">
-      <h1 className="nav-logo">ReactBook</h1>
-      <ul className="nav-link-items">
-        <li className="nav-link-item">
-          <Link to="/" className="nav-link-item-context">
-            Home
-          </Link>
-        </li>
-        <li className="nav-link-item">
-          <Link to="/about" className="nav-link-item-context">
-            About
-          </Link>
-      
-        </li>
-        <li> 
-          <Link to="/credit" className="nav-link-item-context">
-          Credit
-          </Link>
-        </li>
-      </ul>
+      <h1 className="nav-logo">
+        <Link to="/">ReactBook</Link>
+      </h1>
+      <div className="navbar">
+        <div className="avatar">
+          <img className="avatar-icon" src={avatarImg} alt="User's Avatar" />
+          <p className="avatar-username">Joan Doe</p>
+        </div>
+        <div className="navbar-settings">
+          <Settings className="navbar-settings-icon" />
+        </div>
+      </div>
     </div>
   );
 };

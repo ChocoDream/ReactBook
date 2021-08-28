@@ -6,7 +6,7 @@
   },
   "devDependencies": {
     "@snowpack/plugin-react-refresh": "^2.5.0",
-    "snowpack": "^3.3.7"
+    "snowpack": "^3.8.8"
   },
   "dependencies": {
     "@snowpack/plugin-sass": "^1.4.0",

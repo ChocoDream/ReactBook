@@ -1,0 +1,61 @@
+$nav-color: orange;
+
+$nav-logo-text-size: 1.4rem;
+$nav-logo-color: white;
+
+$navbar-item-size: 2.2rem;
+$navbar-item-radius: 50%;
+
+$avatar-text-size: 1.2rem;
+
+.nav {
+  background-color: $nav-color;
+  display: flex;
+  flex: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  .nav-logo {
+    font-size: $nav-logo-text-size;
+    color: $nav-logo-color;
+
+    :visited {
+      color: $nav-logo-color;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  .avatar {
+    display: flex;
+    align-items: center;
+    .avatar-icon {
+      border-radius: $navbar-item-radius;
+      max-width: $navbar-item-size;
+      max-height: $navbar-item-size;
+    }
+
+    .avatar-username {
+      font-size: $avatar-text-size;
+    }
+  }
+
+  .navbar-settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+    background-color: white;
+    width: $navbar-item-size;
+    height: $navbar-item-size;
+    border-radius: $navbar-item-radius;
+    .navbar-settings-icon {
+      height: 80%;
+      width: 80%;
+    }
+  }
+}
