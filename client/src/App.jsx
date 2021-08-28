@@ -7,7 +7,6 @@ import About from "containers/About/About";
 import NotFound from "containers/NotFound/NotFound";
 import Credit from "containers/Credit/Credit";
 
-
 const App = () => {
   return (
     <div className="app">
@@ -21,8 +20,7 @@ const App = () => {
             <About />
           </Route>
           <Route exact path="/credit">
-            <Credit /> 
-
+            <Credit />
           </Route>
           <Route path="*">
             <NotFound />
