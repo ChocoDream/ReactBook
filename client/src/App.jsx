@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 //COMPONENTS
-import Home from "containers/Home/Home";
+import Home from "./Pages/Home/Home";
 import Nav from "containers/Nav/Nav";
-import About from "containers/About/About";
-import NotFound from "containers/NotFound/NotFound";
-import Credit from "containers/Credit/Credit";
+import About from "./Pages/About/About";
+import NotFound from "./Pages/NotFound/NotFound";
+import Credit from "./Pages/Credit/Credit";
 
 const App = () => {
   return (
